@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wecome To Mississauga's Top Chinese Bakery</title>
+    <link rel="icon" href="images/Logo.png" />
+    <!-- CSS style sheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/1a2bf17033.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap & JQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <!-- home -->
+    <section id="home">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+
+        <!--  mobile to medium screens  -->
+          <a class="navbar-brand d-lg-none" href="#"><h3>Oriental Bakery 康華閣餅店</h3></a>
+        
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+        <!--  Use flexbox utility classes to change how the child elements are justified  -->
+          <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
+        
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#home">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-us">About</a>
+              </li>
+            </ul>
+            
+        <!--  lg screens and up   -->
+            <a class="navbar-brand d-none d-lg-block" href="#"><h1 id="name">Oriental Bakery 康華閣餅店</h1></a>
+            
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#carousel1">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-us">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      <h1 id="headline"></h1>
+    </section>
+
+    <!-- About Us-->
+    <section id="about-us" class="bg-light">
+      <h2 class="title">ABOUT US</h2>
+      <p>Our bakers start work before the sun rises each day to ensure that every batch is as fresh as possible before it gets to you. We're dedicated to kickstarting your morning with the best quality Asian (Hong Kong Style) buns, pastries, cakes, hot cooked food, our classic Milktea and more! Fun fact: We've been in the bakery business for over 10 years, and we've gained excellent feedback since!</p>
+      <div class="row rowInAboutUs">
+        <div class="col-lg-6">
+          <h5>Handcrafted Natural Goods</h5>
+          <p>We use 100 % natural ingredients with no preservatives and colouring for our pastries and buns.</p>
+        </div>
+        <div class="col-lg-6">
+          <h5>Our Philosophy</h5>
+          <p>Healthy and great tasting food is the way of enjoying life!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photos -->
+    <div id="carousel1" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel1" data-slide-to="1"></li>
+        <li data-target="#carousel1" data-slide-to="2"></li>
+        <li data-target="#carousel1" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/img1.jpg" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="images/img2.jpg" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="images/img3.jpg" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="images/img4.jpg" class="d-block w-100">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <!-- cake photos -->
+    <section id="cake-photos" class="bg-light">
+      <h2 class="title">CAKES</h2>
+      <h5 id="pre-ordering">Available for Pre-ordering <a role="button" href="#contact-us" class="btn btn-warning">Order Now</a></h5>
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6 photo-box">
+          <img src="images/Cake1.jpg" class="cake-image" alt="..." />
+          <div class="img-description-layer">
+            <p class="img-description">Mango</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 photo-box">
+          <img src="images/Cake2.jpg" class="cake-image" alt="..." />
+          <div class="img-description-layer">
+            <p class="img-description">Mixed-fruit</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 photo-box">
+          <img src="images/Cake3.jpg" class="cake-image" alt="..." />
+          <div class="img-description-layer">
+            <p class="img-description">Chocolate</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 photo-box">
+          <img src="images/Cake4.jpg" class="cake-image" alt="..." />
+          <div class="img-description-layer">
+            <p class="img-description">Mixed-fruit</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 photo-box">
+          <img src="images/Cake5.jpg" class="cake-image" alt="..." />
+          <div class="img-description-layer">
+            <p class="img-description">Strawberry</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 photo-box">
+          <img src="images/Cake6.jpg" class="cake-image" alt="..." />
+          <div class="img-description-layer">
+            <p class="img-description">Blueberry cheese</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact-us">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <h2>Contact Us</h2>
+          <br />
+          <h6>900 Rathburn Road West, Mississauga, Ontario L5C 4L3, Canada</h6>
+          <h6>+1 (905) 828-8183</h6>
+          <br />
+          <h5>Hours:</h5>
+          <br />
+          <table>
+            <tr>
+              <td><h6>Friday</h6></td>
+              <td class="right"><h6>8am to 4pm</h6></td>
+            </tr>
+            <tr>
+              <td><h6>Saturday</h6></td>
+              <td class="right"><h6>8am to 4pm</h6></td>
+            </tr>
+            <tr>
+              <td><h6>Sunday</h6></td>
+              <td class="right"><h6>8am to 4pm</h6></td>
+            </tr>
+            <tr>
+              <td><h6>Monday</h6></td>
+              <td class="right"><h6>Closed</h6></td>
+            </tr>
+            <tr>
+              <td><h6>Tuesday</h6></td>
+              <td class="right"><h6>Closed</h6></td>
+            </tr>
+            <tr>
+              <td><h6>Wednesday</h6></td>
+              <td class="right"><h6>Closed</h6></td>
+            </tr>
+            <tr>
+              <td><h6>Thursday</h6></td>
+              <td class="right"><h6>Closed</h6></td>
+            </tr>
+        </table>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <iframe class="maps" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBuerhrluRTj1WYo6-hxxcUU1RnH5mY4tE&q=Oriental+Bakery+in+Mississauga+ON" allowfullscreen> </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="end">
+      <a class="footer-icon" href="https://www.facebook.com/Oriental-Bakery-%E5%BA%B7%E8%8F%AF%E9%96%A3-152016858193567"><i class="footer-icon fab fa-facebook-f fa-2x"></i></a>
+      <a class="footer-icon" href="https://www.yelp.ca/biz/oriental-bakery-mississauga"><i class="footer-icon fab fa-yelp fa-2x"></i></a>
+      <footer>
+        <p>Copyright ©  <script>document.write(new Date().getFullYear())</script> Oriental Bakery - All Rights Reserved.</p>
+      </footer>
+    </section>
+  </body>
+
+  <!-- Javascript -->
+  <script src="js/index.js"></script>
+</html>

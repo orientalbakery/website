@@ -1,0 +1,27 @@
+var i = 0;
+var text = 'Kickstart your morning with us!'; 
+var speed = 150; 
+
+function typeWriter() {
+  if (i < text.length) {
+    document.getElementById("headline").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+$(document).ready(function(){
+  $(this).scrollTop(0);
+});
+
+$(document).ready(function() {
+  $(window).scroll(function() {
+     if($(this).scrollTop() > 1) { 
+         $('.navbar').addClass('bg-light');
+     } else {
+         $('.navbar').removeClass('bg-light');
+     }
+  });
+});
+
+typeWriter();
