@@ -17,9 +17,9 @@ $(document).ready(function(){
 $(document).ready(function() {
   $(window).scroll(function() {
      if($(this).scrollTop() > 1) { 
-         $('.navbar').addClass('bg-light');
+         $('.navbar').addClass('navbar-color');
      } else {
-         $('.navbar').removeClass('bg-light');
+         $('.navbar').removeClass('navbar-color');
      }
   });
 });
