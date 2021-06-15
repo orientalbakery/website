@@ -1,6 +1,6 @@
 var i = 0;
 var text = 'Kickstart your morning with us!'; 
-var speed = 150; 
+var speed = 170; 
 
 function typeWriter() {
   if (i < text.length) {
